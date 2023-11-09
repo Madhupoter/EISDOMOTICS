@@ -1,0 +1,45 @@
+@media only screen and (min-width:1800px) and (max-width:2200px) {
+    .services{
+        height: 150vh;
+      }
+    .podcastmain{
+        margin-top: -380px;
+    }
+
+}
+
+
+
+@media only screen and (max-width:500px) {
+    .header .media{
+        display: none !important;
+    }
+
+    .mobile{
+        display: block !important;
+      }
+      .desktop{
+        display: none !important;
+      }
+
+    .services .servicecont h1 span {
+        color: #fff !important;
+        opacity: 0.5;
+    }
+    .navbar-brand {
+        width: 60%;
+        margin-top:0px !important;
+        
+    }
+    .navbar-brand img {
+        margin-right: 30px;
+    }
+
+    .main_video {
+        height: auto;
+    }
+    .navbar-nav  li:nth-child(-n + 8):after {
+        display: none;
+    }
+
+}
