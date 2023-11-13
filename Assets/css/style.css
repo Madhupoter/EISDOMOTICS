@@ -10,6 +10,11 @@
     font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Mono', monospace;
     font-family: 'Lato', sans-serif;
+
+}
+
+html {
+    scroll-padding-top: 200px;
 }
 
 
@@ -123,6 +128,41 @@ a {
 
 
 
+/* Animation */
+
+.navbar-nav .nav-link::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+.navbar-nav .nav-link:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar-nav .nav-link::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    inset: 0 0 0 0;
+    background: hsl(200 100% 80%);
+    text-align: center;
+    z-index: -1;
+    transition: transform .3s ease;
+    color: black;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+}
+
+/* Animation */
+
+
 
 
 .navbar-nav:hover> :not(:hover) {
@@ -190,11 +230,28 @@ a {
     overflow: hidden;
     position: relative;
     margin-top: -116px;
-    z-index: -1;
+    z-index: 1;
+}
+
+/* default item styles  */
+.carousel-inner>.carousel-item {
+    transform: scale(1);
+    transition: opacity 4s linear, transform 10s linear;
+}
+
+/* active item styles  */
+.carousel-inner>.carousel-item.active {
+    opacity: 1;
+    transform: scale(1.2);
 }
 
 .banner .carousel-inner img {
     height: 100vh;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    display: none !important;
 }
 
 
@@ -556,10 +613,245 @@ a {
     padding-top: 20px;
 }
 
+/* SMART HOME DESIGN& SERVICES */
+
+.homedesignbanner {
+    padding: 50px 0px;
+}
+
+.homedesignbanner .homedesignbannerPackages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.homedesignbanner2 {
+    padding-top: 50px;
+    background-color: #000000;
+    height: 500px;
+}
+
+.homedesignbanner2 .sec-title {
+    margin-bottom: 50px;
+}
+
+.homedesignbanner2 .homedesignbanner2buildservices {
+    background-color: #fff;
+    padding: 25px;
+}
+
+.homedesignbanner2 .homedesignbanner2buildservices h5 {
+    color: black;
+    font-weight: bold;
+}
+
+
+.homedesignbanner3 {
+    margin-top: 400px;
+    padding-bottom: 50px;
+}
+
+.homedesignbanner4 {
+    padding: 50px 0px;
+    background-image: url(../images/SmartHomeDesign/img6.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.homedesignbanner4 .homedesignbanner4simple {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+
+}
+
+.homedesignbanner5 {
+    overflow: hidden;
+}
+
+
+.homeautomationbanner {
+    padding: 50px 0px;
+}
+
+
+.homeautomationbanner2 {
+    padding-top: 50px;
+    background-color: #000000;
+    /* overflow: hidden; */
+    height: 600px;
+}
+
+.homeautomationbanner2 .sec-title {
+    margin-bottom: 50px;
+}
+
+.homeautomationbanner3 {
+    overflow: hidden;
+    margin-top: -300px;
+    margin-bottom: 50px;
+}
+
+.homeautomationbanner3 .homeautomationbanner2simplify {
+    background-color: #5bc6e2;
+    padding: 25px;
+    height: 720px;
+}
+
+.homeautomationbanner3 .homeautomationbanner2simplify2 {
+    background-color: #95e4f9;
+    padding: 25px;
+    height: 720px;
+}
+
+/* SMART LIGHT */
+
+.smartlightbanner {
+    overflow: hidden;
+    padding: 50px 0px;
+}
+
+.smartlightbanner .smartlightbannersmartlightfeeling {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.smartlightbanner .smartlightbannersmartlightfeeling p {
+    /* width: 260px; */
+}
+
+.smartlightbanner .smartlightbannersmartlightfeeling img {
+    width: 90%;
+}
+
+.smartlightbanner .sec_title {
+    text-align: end;
+    margin-bottom: 50px;
+}
+
+.smartlightbanner2 {
+    overflow: hidden;
+}
+
+.smartlightbanner2 .sec_title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.smartlightbanner2 .smartlightbanner2lighting {
+    background-color: #e1e2e3;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.smartlightbanner2 .smartlightbanner2lighting p {
+    padding: 25px;
+}
+
+
+.smartlightbanner2 .smartlightbanner2control {
+    height: 500px;
+}
+
+.smartlightbanner2 img {
+    width: 630px;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+}
+
+.smartlightbanner3 {
+    padding-bottom: 30px;
+}
+
+.smartlightbanner4 {
+    padding-bottom: 50px;
+}
+
+.smartlightbanner4 .smartlightbanner4layers {
+    background-color: #95e4f9;
+    padding: 25px;
+}
+
+.smartlightbanner5 ul {
+    list-style: url(../images/liststyle3.png);
+}
+
+.smartlightbanner5 ul li {
+    padding-bottom: 10px;
+}
+
+/* HUMAN-CENTRIC */
 
 
 
 
+
+.humanbanner{
+    padding: 50px 0px;
+}
+
+.humanbanner2 .humanbanner2foundational{
+    padding: 25px 25px 9px;
+    position: relative;
+    z-index: 1;
+    margin-top: -200px;
+   width: 500px;
+   background-color: #fff;
+}
+
+.humanbanner3{
+    padding: 50px 0px;
+}
+
+.humanbanner3 .humanbanner3characterize{
+    background-color: #95e4f9;
+    padding: 25px;
+}
+/* MOTORIZE CURTAINS */
+.motorizedbanner{
+    padding: 50px 0px;
+}
+
+.motorizedbanner ul{
+    list-style: url(../images/liststyle4.png);
+}
+
+.motorizedbanner ul li{
+    padding-bottom: 20px;
+}
+
+.motorizedbanner img{
+    width: 80%;
+    padding-bottom: 30px;
+}
+
+.motorizedbanner2{
+    padding-bottom: 50px;
+}
+
+
+.motorizedbanner2 img {
+    padding-bottom: 30px;
+}
+
+
+.motorizedbanner2 .card1{
+    background-color: #5bc6e2;
+    padding: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.motorizedbanner2 .card2 {
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+}
 
 
 
@@ -612,6 +904,14 @@ a {
         margin-top: 0px;
         padding: 0px !important;
     }
+
+    .carousel-indicators{
+        display: none;
+    }
+
+    /* .carousel-control-prev,.carousel-control-next{
+        display: block !important;
+    } */
 
 
 
@@ -666,16 +966,36 @@ a {
         display: unset;
         justify-content: unset;
     }
-
-
-
     .banner .bannertext {
-        margin-top: 0px;
+        margin-top: 30px;
         padding: 25px 0;
         text-align: center;
         position: relative;
         z-index: 1;
         color: #000;
+    }
+
+    /* default item styles  */
+    .carousel-inner>.carousel-item {
+        transform: scale(1);
+        transition: none;
+    }
+
+    /* active item styles  */
+    .carousel-inner>.carousel-item.active {
+        opacity: 1;
+        transform: none;
+    }
+
+    .banner .carousel-inner img {
+        height: 60vh;
+    }
+
+    .banner {
+        overflow: hidden;
+        position: relative;
+        margin-top: -140px;
+        z-index: 1;
     }
 
     .banner .bannertext h2 {
@@ -729,6 +1049,13 @@ a {
     .navbar-toggler {
         border: none;
         margin-top: 43px;
+    }
+
+    .whobanner {
+        overflow: hidden;
+        position: relative;
+        margin-top: -140px;
+        z-index: -1;
     }
 
     .whobanner .bannerwhotext {
@@ -802,11 +1129,158 @@ a {
         width: unset;
     }
 
+    .homedesignbanner2 {
+        height: auto;
+    }
+
+        .homedesignbanner2 br{
+            display: none;
+        }
+
+    .homedesignbanner3 {
+        margin-top: 0px;
+        padding: 30px 0px;
+    }
+
+    .homedesignbanner4 .homedesignbanner4simple {
+        display: unset;
+    }
+
+    .homedesignbanner4 {
+        background-image: url(../images/SmartHomeDesign/img6-1.png);
+    }
+
+    .homeautomationbanner2 {
+        height: auto;
+    }
+
+        .homeautomationbanner2 br{
+            display: none;
+        }
+
+    .homeautomationbanner3 {
+        margin-top: auto;
+    }
+
+    .homeautomationbanner3 .homeautomationbanner2simplify {
+        background-color: #5bc6e2;
+        padding: 20px;
+        height: auto;
+    }
+
+    .homeautomationbanner3 .homeautomationbanner2simplify2 {
+        background-color: #95e4f9;
+        padding: 20px;
+        height: auto;
+    }
+
+    .smartlightbanner .sec_title {
+        text-align: center;
+
+    }
+
+    .smartlightbanner .smartlightbannersmartlightfeeling {
+        display: unset;
+        align-items: unset;
+        justify-content: unset;
+    }
+
+    .smartlightbanner p {
+        width: auto;
+        padding: 20px;
+    }
+
+    .smartlightbanner img {
+        width: 100% !important;
+    }
+
+
+
+    .smartlightbanner2 .smartlightbanner2lighting {
+        background-color: #e1e2e3;
+        padding: 20px;
+        display: unset;
+        justify-content: unset;
+        height: auto;
+    }
+
+    .smartlightbanner2 .smartlightbanner2lighting p {
+        padding: 0px;
+    }
+
+
+    .smartlightbanner2 .smartlightbanner2control {
+        height: auto;
+    }
+
+    .smartlightbanner2 img {
+        width: 100%;
+        height: unset;
+        position: relative;
+        z-index: 1;
+    }
+
+    .smartlightbanner3 {
+        padding: 30px 0px;
+    }
+
+    .smartlightbanner4 .smartlightbanner4layers {
+        background-color: #95e4f9;
+        padding: 25px;
+        margin-bottom: 10px;
+    }
+
+        .humanbanner2 .humanbanner2foundational br{
+            display: none;
+        }
+    .humanbanner2 .humanbanner2foundational {
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+        margin-top: 0px;
+        width: unset;
+        background-color: #fff;
+    }
+
+        .motorizedbanner ul li {
+            padding-bottom: 10px;
+        }
+    
+        .motorizedbanner img {
+            width: 100%;
+            padding-bottom: 10px;
+        }
+        .motorizedbanner2 br{
+            display: none;
+        }
+
+
+
+
+
+
+
+
 }
 
 
 
-@media only screen and (min-width:1370px) and (max-width: 2000px) {
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:1441px) and (max-width: 2000px) {
+    p {
+        font-size: 18px;
+    }
+
     .banner {
         overflow: hidden;
         position: relative;
@@ -820,5 +1294,40 @@ a {
         z-index: 1;
         color: #fff;
     }
+
+    .banner3 {
+        background-image: url(../images/img12.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% 100%;
+        padding-top: 50px;
+        height: 850px;
+    }
+
+    .banner3 .banner3what {
+        padding: 50px 20px;
+        background-color: #000000;
+        color: #fff;
+        position: relative;
+        bottom: -268px;
+    }
+
+    .smartlightbanner2 img {
+        width: 750px;
+        height: 400px;
+    }
+
+        .humanbanner2 .humanbanner2foundational {
+            padding: 25px 25px 1px;
+            position: relative;
+            z-index: 1;
+            margin-top: -200px;
+            width: 600px;
+            background-color: #fff;
+        }
+
+
+
+
 
 }
