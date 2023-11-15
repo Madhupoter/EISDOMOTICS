@@ -4,19 +4,25 @@
     if ($("#header").length > 0) {
         $(window).on('scroll', function() {
             if ($(window).scrollTop() >100) {
-                $("#header").css("position", "fixed");
+                $("#header").css("position", "fixed ");
                 $("#header").css("margin-top", "116px");
-                $(".logo1").css("width", "120px");
+                $(".nav-brand img").css("width", "200px");
+                $(" .navbar-brand .logo1").css("width", "200px");
                 $(".navbar-toggler").css("width", "40px");
                 $(".navbar-toggler").css("margin-top", "30px");
+                $(".menutop").css("display", "none");
+                $(".navbar").css("margin-top", "24px");
 
 
             } else {
-                $("#header").css("position", "relative");
+                $("#header").css("position", "relative ");
                 $("#header").css("margin-top", "0px");
-                $(".logo1").css("width", "200px");
+                $(".nav-brand img").css("width", "unset");
+                $(".navbar-brand .logo1").css("width", "250px");
                 $(".navbar-toggler").css("width", "50px");
                 $(".navbar-toggler").css("margin-top", "43px");
+                $(".menutop").css("display", "flex");
+                $(".navbar").css("margin-top", "0px");
 
             }
         });
@@ -37,3 +43,4 @@ if (elem.requestFullscreen) {
 }
 
 ;
+
