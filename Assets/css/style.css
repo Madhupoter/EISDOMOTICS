@@ -14,7 +14,7 @@
 }
 
 html {
-    scroll-padding-top: 200px;
+    scroll-padding-top: 230px;
 }
 
 
@@ -71,7 +71,7 @@ a {
     color: #58bceb;
 }
 
-.fa-envelope {
+.menutop .fa-envelope {
     font-size: 18px;
     border: 1px solid #58bceb;
     border-radius: 20px;
@@ -159,6 +159,9 @@ a {
 .navbar-nav .nav-link {
     position: relative;
 }
+
+
+
 
 /* Animation */
 
@@ -357,6 +360,7 @@ a {
     color: #fff;
     font-weight: bold;
     margin-top: -45px;
+    font-size: 40px;
 }
 
 .banner4solution {
@@ -405,6 +409,10 @@ a {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.overlay span{
+    font-size: 13px;
 }
 
 .banner5 {
@@ -469,7 +477,7 @@ a {
 }
 
 .whatsapp {
-    width: 30px;
+    width: 35px;
     margin-top: -10px;
 }
 
@@ -518,13 +526,13 @@ a {
     background-size: 100% 100%;
     color: #fff;
     height: 350px;
-    padding: 0px 50px;
+    padding: 0px 105px;
 }
 
 .whobanner3vision {
     background-color: #5bc6e2;
     height: 350px;
-    padding: 0px 50px;
+    padding: 0px 105px;
     color: #000;
 }
 
@@ -791,46 +799,47 @@ a {
 
 
 
-.humanbanner{
+.humanbanner {
     padding: 50px 0px;
 }
 
-.humanbanner2 .humanbanner2foundational{
+.humanbanner2 .humanbanner2foundational {
     padding: 25px 25px 9px;
     position: relative;
     z-index: 1;
     margin-top: -200px;
-   width: 500px;
-   background-color: #fff;
+    width: 500px;
+    background-color: #fff;
 }
 
-.humanbanner3{
+.humanbanner3 {
     padding: 50px 0px;
 }
 
-.humanbanner3 .humanbanner3characterize{
+.humanbanner3 .humanbanner3characterize {
     background-color: #95e4f9;
     padding: 25px;
 }
+
 /* MOTORIZE CURTAINS */
-.motorizedbanner{
+.motorizedbanner {
     padding: 50px 0px;
 }
 
-.motorizedbanner ul{
+.motorizedbanner ul {
     list-style: url(../images/liststyle4.png);
 }
 
-.motorizedbanner ul li{
+.motorizedbanner ul li {
     padding-bottom: 20px;
 }
 
-.motorizedbanner img{
+.motorizedbanner img {
     width: 80%;
     padding-bottom: 30px;
 }
 
-.motorizedbanner2{
+.motorizedbanner2 {
     padding-bottom: 50px;
 }
 
@@ -840,11 +849,11 @@ a {
 }
 
 
-.motorizedbanner2 .card1{
+.motorizedbanner2 .card1 {
     background-color: #5bc6e2;
     padding: 20px;
     margin-bottom: 10px;
-    
+
 }
 
 .motorizedbanner2 .card2 {
@@ -855,12 +864,135 @@ a {
 
 
 
+/* MULTI MEDIA BANNER */
+
+.multimediamediabanner {
+    padding: 50px 0px;
+    overflow: hidden;
+}
+
+.multimediamediabanner .sec_title {
+    margin-bottom: 50px;
+}
 
 
 
+.multimediamediabanner3 {
+    padding: 50px 0px;
+}
 
 
+.multimediamediabanner3 .multimediamediabanner3easy {
+    background-color: #5bc6e2;
+    padding: 100px;
+    position: relative;
+    z-index: -1;
+}
 
+.multimediamediabanner3 img {
+    margin-top: 100px;
+}
+
+.multimediamediabanner4 .multithings{
+    background-color: #5bc6e2;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    height: 80px;
+    font-weight: bold;
+}
+
+
+.multimediamediabanner5{
+    padding: 50px 0px;
+}
+.multimediamediabanner5 p{
+    padding: 25px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+
+}
+.theatrebanner{
+    padding: 50px 0px;
+}
+
+
+.theatrebanner p{
+    color: #9c9c9c;
+}
+
+
+ .theatrebanner2 .theatrebanner2private{
+    display: flex;
+    margin-bottom: 50px;
+ }
+
+  .theatrebanner2 .theatrebanner2private .theatrebanner2privatetheatre{
+    padding: 20px;
+    background-color: #5bc6e2;
+  }
+
+ .theatrebanner2 .theatrebanner2image img{
+    margin-top: 50px;
+    margin-bottom: 50px;
+ }
+
+  .theatrebanner3 p {
+    color: #9c9c9c;
+}
+
+.theatrebanner3 .cprc{
+    background-color: #5bc6e2;
+    padding: 15px;
+    width: 70%;
+    text-align: center;
+    color: #000;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.theatrebanner3 .cprc2 {
+    background-color: #c8c8c8;
+    padding: 15px;
+    width: 70%;
+    text-align: center;
+    color: #000;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.brandsbanner {
+    padding: 50px 0px;
+}
+
+.brandsbanner .sec_title {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.brandsbanner img{
+    border: 1px solid #000;
+}
+
+.gallerybanner {
+     padding: 50px 0px;
+ }
+
+.gallerybanner .sec_title {
+     margin-bottom: 35px;
+     text-align: center;
+ }
+
+ .contatusbanner{
+    padding: 50px 0px;
+    background-image: radial-gradient(circle farthest-corner at 1.3% 2.8%, rgba(239, 249, 249, 1) 0%, rgba(182, 199, 226, 1) 100.2%);
+ }
+
+ .contatusbanner .sec_title{
+    margin-bottom: 50px;
+ }
 
 
 
@@ -891,6 +1023,10 @@ a {
         display: block !important;
     }
 
+    .pm-2 {
+        padding: 20px;
+    }
+
     .top_content {
         display: none;
     }
@@ -905,7 +1041,7 @@ a {
         padding: 0px !important;
     }
 
-    .carousel-indicators{
+    .carousel-indicators {
         display: none;
     }
 
@@ -949,12 +1085,12 @@ a {
         padding: 10px;
     }
 
-    .logo {
-        width: 200px;
+    .navbar-brand .logo1 {
+        width: 250px ;
     }
 
     .menutop {
-        display: none;
+        display: none !important;
     }
 
 
@@ -966,6 +1102,7 @@ a {
         display: unset;
         justify-content: unset;
     }
+
     .banner .bannertext {
         margin-top: 30px;
         padding: 25px 0;
@@ -997,6 +1134,8 @@ a {
         margin-top: -140px;
         z-index: 1;
     }
+
+      
 
     .banner .bannertext h2 {
         font-size: 25px;
@@ -1036,7 +1175,26 @@ a {
 
     .banner4 .banner4smart h4 {
         margin-top: -25px;
+        font-size: 25px;
     }
+
+    .overlay {
+        position: relative;
+        color: #fff !important;
+    }
+        .banner4solution .overlay {
+            opacity: 1;
+        }
+    .text {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        font-weight: bold;
+    }
+        .overlay span {
+            font-size: 15px;
+            font-weight: normal !important;
+        }
 
     #ham {
         width: 40px;
@@ -1078,13 +1236,13 @@ a {
     .whobanner3 .whobanner3mission {
         color: #fff;
         height: auto;
-        padding: 20px;
+        padding: 20px 30px;
     }
 
     .whobanner3vision {
         background-color: #5bc6e2;
         height: auto;
-        padding: 20px;
+        padding: 20px 30px;
     }
 
     .whobanner3 {
@@ -1133,9 +1291,9 @@ a {
         height: auto;
     }
 
-        .homedesignbanner2 br{
-            display: none;
-        }
+    .homedesignbanner2 br {
+        display: none;
+    }
 
     .homedesignbanner3 {
         margin-top: 0px;
@@ -1154,9 +1312,9 @@ a {
         height: auto;
     }
 
-        .homeautomationbanner2 br{
-            display: none;
-        }
+    .homeautomationbanner2 br {
+        display: none;
+    }
 
     .homeautomationbanner3 {
         margin-top: auto;
@@ -1230,9 +1388,10 @@ a {
         margin-bottom: 10px;
     }
 
-        .humanbanner2 .humanbanner2foundational br{
-            display: none;
-        }
+    .humanbanner2 .humanbanner2foundational br {
+        display: none;
+    }
+
     .humanbanner2 .humanbanner2foundational {
         padding: 20px;
         position: relative;
@@ -1242,19 +1401,78 @@ a {
         background-color: #fff;
     }
 
-        .motorizedbanner ul li {
-            padding-bottom: 10px;
+    .motorizedbanner ul li {
+        padding-bottom: 10px;
+    }
+
+    .motorizedbanner img {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .motorizedbanner2 br {
+        display: none;
+    }
+
+    .multimediamediabanner .sec_title {
+        margin-bottom: 0px;
+    }
+
+    .multimediamediabanner3 .multimediamediabanner3easy {
+        background-color: #5bc6e2;
+        padding: 20px;
+        position: relative;
+        z-index: unset;
+    }
+
+    .multimediamediabanner3 {
+        padding: 20px 0px;
+    }
+
+    .multimediamediabanner3 img {
+        margin-top: 0px;
+        width: 100%;
+    }
+
+
+        .theatrebanner {
+            padding: 30px 0px;
         }
     
-        .motorizedbanner img {
+    
+    
+    
+        .theatrebanner2 .theatrebanner2private {
+            display: unset;
+            margin-bottom: 0px;
+        }
+
+                .theatrebanner2 .theatrebanner2private img{
+                    width: 100%;
+                }
+    
+        .theatrebanner2 .theatrebanner2private .theatrebanner2privatetheatre {
+            padding: 20px;
+            background-color: #5bc6e2;
+        }
+    
+        .theatrebanner2 .theatrebanner2image img {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    
+    
+        .theatrebanner3 .cprc {
             width: 100%;
-            padding-bottom: 10px;
         }
-        .motorizedbanner2 br{
-            display: none;
+    
+        .theatrebanner3 .cprc2 {
+            width: 100%;
         }
 
-
+        .sec_title{
+            margin-bottom: 25px;
+        }
 
 
 
@@ -1295,6 +1513,8 @@ a {
         color: #fff;
     }
 
+
+
     .banner3 {
         background-image: url(../images/img12.png);
         background-repeat: no-repeat;
@@ -1312,19 +1532,43 @@ a {
         bottom: -268px;
     }
 
+        .whobanner3 .whobanner3mission {
+            background-image: url(../images/whoweare/img2.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 100% 100%;
+            color: #fff;
+            height: 350px;
+            padding: 0px 150px;
+        }
+    
+        .whobanner3vision {
+            background-color: #5bc6e2;
+            height: 350px;
+            padding: 0px 150px;
+            color: #000;
+        }
+
     .smartlightbanner2 img {
         width: 750px;
         height: 400px;
     }
 
-        .humanbanner2 .humanbanner2foundational {
-            padding: 25px 25px 1px;
-            position: relative;
-            z-index: 1;
-            margin-top: -200px;
-            width: 600px;
-            background-color: #fff;
-        }
+    .humanbanner2 .humanbanner2foundational {
+        padding: 25px 25px 1px;
+        position: relative;
+        z-index: 1;
+        margin-top: -200px;
+        width: 600px;
+        background-color: #fff;
+    }
+
+
+
+    .multimediamediabanner3 img {
+        margin-top: 100px;
+        width: 720px;
+    }
 
 
 
