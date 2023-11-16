@@ -119,11 +119,24 @@ a {
     z-index: 1999;
 }
 
+
+.nav-brand{
+    position: absolute;
+    width: 330px;
+}
+.nav-brand img {
+    background-color: #DDDDDD;
+    width: 300px;
+    padding: 20px 10px;
+}
+
+
+
 .main_menu {
     display: flex;
     align-items: center;
     justify-content: end;
-    padding: 0px;
+    padding: 20px 0px 0px;
 }
 
 
@@ -149,12 +162,27 @@ a {
     bottom: 0;
     left: 0;
     inset: 0 0 0 0;
-    background: hsl(200 100% 80%);
+    background: #0396cc;
     text-align: center;
     z-index: -1;
     transition: transform .3s ease;
     color: black;
 }
+
+
+
+.dropdown-item {
+    transition: 0.4s;
+    color: #000;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.dropdown-item:hover {
+    padding: 2px 5px;
+}
+
+
 
 .navbar-nav .nav-link {
     position: relative;
@@ -172,10 +200,19 @@ a {
     opacity: 0.4;
 }
 
+.navbar-nav .dropdown-menu:hover> :not(:hover) {
+    opacity: 0.4;
+}
+
+.navbar-nav  .dropdown-item:hover{
+    background-color: #1875bb;
+    color: #fff;
+}
+
 .navbar-nav .nav-link {
     color: #fff;
     padding-right: 1rem !important;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .container-fluid {
@@ -187,15 +224,15 @@ a {
     font-size: 18px;
 }
 
-.dropdown li:nth-child(-n + 6):after {
+.dropdown li:nth-child(-n + 5):after {
     display: none !important;
 }
 
 
 
-.navbar-nav li:nth-child(-n + 6):after {
+.navbar-nav li:nth-child(-n + 5):after {
     content: "";
-    border-right: 2px solid #fff;
+    border-right: 2px solid #0396cc;
     display: block;
     width: 100%;
     height: 18px;
@@ -232,14 +269,15 @@ a {
 .banner {
     overflow: hidden;
     position: relative;
-    margin-top: -116px;
+    margin-top: -112px;
     z-index: 1;
 }
 
 /* default item styles  */
 .carousel-inner>.carousel-item {
     transform: scale(1);
-    transition: opacity 4s linear, transform 10s linear;
+    transition: transform 10s linear;
+    /* transition: opacity 4s linear, transform 10s linear; */
 }
 
 /* active item styles  */
@@ -260,6 +298,7 @@ a {
 
 .banner .bannertext h2 {
     font-size: 40px;
+    color: #2caae2;
 }
 
 .banner .bannertext h1 {
@@ -267,6 +306,7 @@ a {
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 70px;
+    line-height: 35px;
 }
 
 .banner .bannertext {
@@ -317,10 +357,11 @@ a {
     background-position: center center;
     background-size: 100% 100%;
     padding-top: 50px;
+    overflow: hidden;
 }
 
 .banner3 .banner3what {
-    padding: 50px 20px;
+    padding: 40px;
     background-color: #000000;
     color: #fff;
 }
@@ -411,7 +452,7 @@ a {
     text-align: center;
 }
 
-.overlay span{
+.overlay span {
     font-size: 13px;
 }
 
@@ -420,7 +461,7 @@ a {
     padding: 50px 0px;
 }
 
-.banner5 .banner5design {
+.banner3 .banner5design {
     border: 1px solid #fff;
     border-radius: 5px;
     padding: 20px;
@@ -428,10 +469,13 @@ a {
     justify-content: space-between;
     color: #fff;
     margin-bottom: 10px;
-    height: 163px;
+    /* height: 163px; */
 }
 
-.banner5 .banner5design h5 {
+.banner3 .banner5design img{
+    width:40px ;
+}
+.banner3 .banner5design h5 {
     color: #57bbe9;
     text-transform: uppercase;
     font-weight: bold;
@@ -893,7 +937,7 @@ a {
     margin-top: 100px;
 }
 
-.multimediamediabanner4 .multithings{
+.multimediamediabanner4 .multithings {
     background-color: #5bc6e2;
     padding: 20px;
     width: 100%;
@@ -903,45 +947,47 @@ a {
 }
 
 
-.multimediamediabanner5{
+.multimediamediabanner5 {
     padding: 50px 0px;
 }
-.multimediamediabanner5 p{
+
+.multimediamediabanner5 p {
     padding: 25px;
     margin-bottom: 10px;
     border: 1px solid #000;
 
 }
-.theatrebanner{
+
+.theatrebanner {
     padding: 50px 0px;
 }
 
 
-.theatrebanner p{
+.theatrebanner p {
     color: #9c9c9c;
 }
 
 
- .theatrebanner2 .theatrebanner2private{
+.theatrebanner2 .theatrebanner2private {
     display: flex;
     margin-bottom: 50px;
- }
+}
 
-  .theatrebanner2 .theatrebanner2private .theatrebanner2privatetheatre{
+.theatrebanner2 .theatrebanner2private .theatrebanner2privatetheatre {
     padding: 20px;
     background-color: #5bc6e2;
-  }
+}
 
- .theatrebanner2 .theatrebanner2image img{
+.theatrebanner2 .theatrebanner2image img {
     margin-top: 50px;
     margin-bottom: 50px;
- }
+}
 
-  .theatrebanner3 p {
+.theatrebanner3 p {
     color: #9c9c9c;
 }
 
-.theatrebanner3 .cprc{
+.theatrebanner3 .cprc {
     background-color: #5bc6e2;
     padding: 15px;
     width: 70%;
@@ -972,27 +1018,27 @@ a {
     text-align: center;
 }
 
-.brandsbanner img{
+.brandsbanner img {
     border: 1px solid #000;
 }
 
 .gallerybanner {
-     padding: 50px 0px;
- }
+    padding: 50px 0px;
+}
 
 .gallerybanner .sec_title {
-     margin-bottom: 35px;
-     text-align: center;
- }
+    margin-bottom: 35px;
+    text-align: center;
+}
 
- .contatusbanner{
+.contatusbanner {
     padding: 50px 0px;
     background-image: radial-gradient(circle farthest-corner at 1.3% 2.8%, rgba(239, 249, 249, 1) 0%, rgba(182, 199, 226, 1) 100.2%);
- }
+}
 
- .contatusbanner .sec_title{
+.contatusbanner .sec_title {
     margin-bottom: 50px;
- }
+}
 
 
 
@@ -1034,6 +1080,7 @@ a {
     .navbar-brand {
         display: block !important;
         padding-bottom: 0px !important;
+        background-color: #DDDDDD;
     }
 
     .navbar {
@@ -1056,10 +1103,10 @@ a {
         display: unset;
         align-items: unset;
         justify-content: unset;
-
+        padding: 0px;
     }
 
-    .navbar-nav li:nth-child(-n + 6):after {
+    .navbar-nav li:nth-child(-n + 5):after {
         display: none;
     }
 
@@ -1086,7 +1133,7 @@ a {
     }
 
     .navbar-brand .logo1 {
-        width: 250px ;
+        width: 280px;
     }
 
     .menutop {
@@ -1104,7 +1151,7 @@ a {
     }
 
     .banner .bannertext {
-        margin-top: 30px;
+        margin-top: 0px;
         padding: 25px 0;
         text-align: center;
         position: relative;
@@ -1135,7 +1182,7 @@ a {
         z-index: 1;
     }
 
-      
+
 
     .banner .bannertext h2 {
         font-size: 25px;
@@ -1182,19 +1229,22 @@ a {
         position: relative;
         color: #fff !important;
     }
-        .banner4solution .overlay {
-            opacity: 1;
-        }
+
+    .banner4solution .overlay {
+        opacity: 1;
+    }
+
     .text {
         position: relative;
         top: 50%;
         left: 50%;
         font-weight: bold;
     }
-        .overlay span {
-            font-size: 15px;
-            font-weight: normal !important;
-        }
+
+    .overlay span {
+        font-size: 15px;
+        font-weight: normal !important;
+    }
 
     #ham {
         width: 40px;
@@ -1435,44 +1485,44 @@ a {
     }
 
 
-        .theatrebanner {
-            padding: 30px 0px;
-        }
-    
-    
-    
-    
-        .theatrebanner2 .theatrebanner2private {
-            display: unset;
-            margin-bottom: 0px;
-        }
+    .theatrebanner {
+        padding: 30px 0px;
+    }
 
-                .theatrebanner2 .theatrebanner2private img{
-                    width: 100%;
-                }
-    
-        .theatrebanner2 .theatrebanner2private .theatrebanner2privatetheatre {
-            padding: 20px;
-            background-color: #5bc6e2;
-        }
-    
-        .theatrebanner2 .theatrebanner2image img {
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-    
-    
-        .theatrebanner3 .cprc {
-            width: 100%;
-        }
-    
-        .theatrebanner3 .cprc2 {
-            width: 100%;
-        }
 
-        .sec_title{
-            margin-bottom: 25px;
-        }
+
+
+    .theatrebanner2 .theatrebanner2private {
+        display: unset;
+        margin-bottom: 0px;
+    }
+
+    .theatrebanner2 .theatrebanner2private img {
+        width: 100%;
+    }
+
+    .theatrebanner2 .theatrebanner2private .theatrebanner2privatetheatre {
+        padding: 20px;
+        background-color: #5bc6e2;
+    }
+
+    .theatrebanner2 .theatrebanner2image img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    .theatrebanner3 .cprc {
+        width: 100%;
+    }
+
+    .theatrebanner3 .cprc2 {
+        width: 100%;
+    }
+
+    .sec_title {
+        margin-bottom: 25px;
+    }
 
 
 
@@ -1499,12 +1549,12 @@ a {
         font-size: 18px;
     }
 
-    .banner {
+    /* .banner {
         overflow: hidden;
         position: relative;
         margin-top: -130px;
         z-index: -1;
-    }
+    } */
 
     .banner .bannertext {
         margin-top: -400px;
@@ -1521,7 +1571,7 @@ a {
         background-position: center center;
         background-size: 100% 100%;
         padding-top: 50px;
-        height: 850px;
+        height: 1000px;
     }
 
     .banner3 .banner3what {
@@ -1529,25 +1579,25 @@ a {
         background-color: #000000;
         color: #fff;
         position: relative;
-        bottom: -268px;
+        bottom: -150px;
     }
 
-        .whobanner3 .whobanner3mission {
-            background-image: url(../images/whoweare/img2.png);
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: 100% 100%;
-            color: #fff;
-            height: 350px;
-            padding: 0px 150px;
-        }
-    
-        .whobanner3vision {
-            background-color: #5bc6e2;
-            height: 350px;
-            padding: 0px 150px;
-            color: #000;
-        }
+    .whobanner3 .whobanner3mission {
+        background-image: url(../images/whoweare/img2.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% 100%;
+        color: #fff;
+        height: 350px;
+        padding: 0px 150px;
+    }
+
+    .whobanner3vision {
+        background-color: #5bc6e2;
+        height: 350px;
+        padding: 0px 150px;
+        color: #000;
+    }
 
     .smartlightbanner2 img {
         width: 750px;
